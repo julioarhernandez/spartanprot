@@ -1,0 +1,113 @@
+@mixin placeholder {
+    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        @content;
+    }
+    &::-moz-placeholder { /* Firefox 19+ */
+        @content;
+    }
+    &:-ms-input-placeholder { /* IE 10+ */
+        @content;
+    }
+    &:-moz-placeholder { /* Firefox 18- */
+        @content;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        padding: 0;
+    }
+}
+
+body {
+    font-family: 'Open Sans';
+    color: #9FA2A6;
+    font-size: 14px;
+    line-height: 26px;
+}
+
+a:hover,
+a:visited,
+a:active {
+    text-decoration: none;
+}
+
+
+.sec-pad {
+    padding: 120px 0;
+}
+
+.p0 {
+    padding: 0 !important;
+}
+
+.pt0 {
+    padding-top: 0;
+}
+.pb0 {
+    padding-bottom: 0;
+}
+
+.sec-title {margin-bottom: 50px;margin-top: -5px;
+    h2, p {margin: 0;}
+    p {color: #EA6654;font-size: 20px;font-weight: 600;font-family: 'Titillium Web';margin-bottom: 10px;}
+    h2 {color: #182345;font-family: 'Titillium Web';font-weight: normal;font-size: 45px;line-height: 50px;
+        span {font-weight: bold;}
+    }
+}
+
+.thm-btn {
+    border: none;
+    outline: none;
+    display: inline-block;
+    background:#EA6654;
+    color: #fff;
+    text-align: center;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 17px;
+    border-radius: 30px;
+    padding: 12px 48px;
+    transition: all .4s ease;
+    &:hover {
+        background:#161827;
+        color: #fff;
+    }
+}
+
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    background:#EA6654;
+    color: #fff;
+    font-size: 20px;
+    line-height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    box-shadow: drop-shadow-converter(#000000, $angle: 90, $distance: 23px, $spread: 0, $size: 42px, $opacity: 20%);
+    transition: all .4s ease;
+    &:hover {
+        background: $thm_black;
+        box-shadow: drop-shadow-converter(#fff, $angle: 90, $distance: 15px, $spread: 0, $size: 50px, $opacity: 20%);
+    }
+}
+
+.preloader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+    background-color: #ffffff;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url(../img/preloader.gif);
+}

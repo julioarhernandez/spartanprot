@@ -1,0 +1,76 @@
+.testimonial-area {
+    .testimonial-carousel {
+        background-color: transparent;
+        .owl-nav {
+            margin: 0;
+        }
+        .owl-nav [class*=owl-] {
+            background-color: transparent;
+            padding: 0;
+            margin: 0;
+            border-radius: 0;
+            position: absolute;
+            top: 40%;
+            left: 0px;
+            transform: translateY(-50%);
+        }
+        .owl-nav [class*=owl-next] {
+            right: 0px;
+            left: auto;
+        }
+    }
+    .single-testimonial {
+        text-align: center;
+        padding-top: 70px;
+        max-width: 970px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 120px;
+        .inner {
+            background: #fff;
+            padding-bottom: 55px;
+            box-shadow: 0px 5px 61px -15px rgba(0, 0, 0, 0.1);
+        }
+        .icon-box {
+            position: relative;
+            top: -70px;
+            margin-bottom: -70px;
+            img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: auto;
+                box-shadow: 0px 25px 61px 15px rgba(0, 0, 0, 0.1);
+                border-radius: 50%;
+            }
+        }
+        h3 {
+            color: #182345;
+            font-size: 20px;
+            font-weight: 600;
+            margin: 0;
+            margin-top: 25px;
+            font-family: 'Montserrat';
+        }
+        p {
+            font-size: 16px;
+            line-height: 32px;
+            color: #A0A2A6;
+            margin: 0;
+            margin-top: 40px;
+        }
+        span {
+            display: block;
+            color: #EA6654;
+            font-size: 15px;
+            margin-top: 5px;
+            font-family: 'Open Sans';
+        }
+    }
+}
+.testimonial-page {padding-bottom: 70px;
+	.single-testimonial {margin-bottom: 50px;padding-bottom: 0;padding-top: 0;
+		.inner {padding-left: 30px;padding-right: 30px;padding-bottom: 40px;border: 1px solid #E5E9F2;border-radius: 10px;padding-top: 50px;}
+		.icon-box {top:0;margin-bottom: 0;}
+	}
+}

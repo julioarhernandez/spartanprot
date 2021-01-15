@@ -1,0 +1,172 @@
+/***************************************************************************************************************
+||||||||||||||||||||||||||||       MASTER STYLESHEET FOR BrentCreek           ||||||||||||||||||||||||||||||||||
+****************************************************************************************************************
+||||||||||||||||||||||||||||              TABLE OF CONTENT                  ||||||||||||||||||||||||||||||||||||
+****************************************************************************************************************
+****************************************************************************************************************
+* 1. imported styles 
+* 2. miscelnious styles 
+* 3. header styles 
+* 4. banner styles 
+* 5. features styles 
+* 6. about styles 
+* 7. services styles 
+* 8. testimonials styles 
+* 9. appointment styles 
+* 10. brand styles 
+* 11. fun fact styles 
+* 12. faq video styles 
+* 13. team styles 
+* 14. footer styles 
+* 15. inner banner styles 
+* 16. blog styles 
+* 17. gallery styles 
+* 18. contact styles 
+* 19. sidebar styles 
+* 20. shop styles 
+* 21. cart styles 
+* 22. checkout styles 
+****************************************************************************************************************
+||||||||||||||||||||||||||||            End TABLE OF CONTENT                ||||||||||||||||||||||||||||||||||||
+****************************************************************************************************************/
+
+
+// math functions are not included in sass
+@import "drop-shadow-converter/mathfunctions";
+// import converter
+@import "drop-shadow-converter/drop-shadow-converter";
+
+// helper functions
+@import "helper-function";
+
+/************************** 
+* 1. imported styles 
+***************************/
+
+@import 'modules/_imported';
+
+/************************** 
+* 2. miscelnious styles 
+***************************/
+
+@import 'modules/_miscelnious';
+
+/************************** 
+* 3. header styles 
+***************************/
+
+@import 'modules/_header';
+
+/************************** 
+* 4. banner styles 
+***************************/
+
+@import 'modules/_banner';
+
+/************************** 
+* 5. features styles 
+***************************/
+
+@import 'modules/_features';
+
+/************************** 
+* 6. about styles 
+***************************/
+
+@import 'modules/_about';
+
+/************************** 
+* 7. services styles 
+***************************/
+
+@import 'modules/_services';
+
+/************************** 
+* 8. testimonials styles 
+***************************/
+
+@import 'modules/_testimonials';
+
+/************************** 
+* 9. appointment styles 
+***************************/
+
+@import 'modules/_appointment';
+
+/************************** 
+* 10. brand styles 
+***************************/
+
+@import 'modules/_brand';
+
+/************************** 
+* 11. fun fact styles 
+***************************/
+
+@import 'modules/_fun-fact';
+
+/************************** 
+* 12. faq video styles 
+***************************/
+
+@import 'modules/_faq-video';
+
+/************************** 
+* 13. team styles 
+***************************/
+
+@import 'modules/_team';
+
+/************************** 
+* 14. footer styles 
+***************************/
+
+@import 'modules/_footer';
+
+/************************** 
+* 15. inner banner styles 
+***************************/
+
+@import 'modules/_inner-banner';
+
+/************************** 
+* 16. blog styles 
+***************************/
+
+@import 'modules/_blog';
+
+/************************** 
+* 17. gallery styles 
+***************************/
+
+@import 'modules/_gallery';
+
+/************************** 
+* 18. contact styles 
+***************************/
+
+@import 'modules/_contact';
+
+/************************** 
+* 19. sidebar styles 
+***************************/
+
+@import 'modules/_sidebar';
+
+/************************** 
+* 20. shop styles 
+***************************/
+
+@import 'modules/_shop';
+
+/************************** 
+* 21. cart styles 
+***************************/
+
+@import 'modules/_cart';
+
+/************************** 
+* 22. checkout styles 
+***************************/
+
+@import 'modules/_checkout';

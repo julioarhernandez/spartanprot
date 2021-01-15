@@ -1,0 +1,60 @@
+.footer {
+	background:#171B27;
+	padding-top: 110px;
+	.footer-widget {
+		h3, p {margin: 0;}
+		ul, li {margin: 0;padding: 0;list-style: none;}
+		p {color: #B2B3BA;font-size: 14px;line-height: 26px;}
+		.title {margin-top: 10px;
+			h3 {color: #fff;font-family: 'Titillium Web';font-size: 24px;font-weight: 600;}
+		}
+		&.about-widget {
+			p {margin-top: 15px;}
+		}
+		&.link-widget {
+			padding-left: 50px;
+			.title {margin-bottom: 23px;}
+			ul.link-list {
+				li + li {margin-top: 10px;}
+				li a {color: #B2B3BA;font-size: 14px;transition: all .4s ease;
+					&:hover {color: #EA6654;}
+				}
+			}
+		}
+		&.social-widget {
+			padding-left: 50px;
+			padding-right: 70px;
+			.title {margin-bottom: 28px;}
+			ul.social {
+				&, li {margin: 0;padding: 0;}
+				& {margin-left: -10px;margin-right: -10px;margin-top: -20px;}
+				li {padding: 0 10px;margin: 20px 0 0;}
+				li a {display: block;width: 46px;height: 46px;border-radius: 50%;background:#353841;color: #9EA0A9;font-size: 15px;line-height: 46px;transition: all .3s ease;text-align: center;
+					&:hover {color: #fff;background:#EA6654;}
+				}
+			}
+		}
+		&.newsletter-widget {
+			.title {margin-bottom: 25px;}
+			.newsletter-form {
+				p {margin-bottom: 20px;}
+				input {width: 100%;display: block;background:#353841;color: #B2B3BA;font-size: 14px;height: 55px;border: none;outline: none;padding-left: 20px;border-radius: 5px;margin-bottom: 10px;
+					@include placeholder {color: #B2B3BA;}
+				}
+			}
+		}
+	}
+	.footer-bottom {
+		margin-top: 100px;
+		border-top: 1px solid #3A3D47;
+		padding: 24px 0;
+		.copy-text {color: #B2B3BA;font-size: 14px;}
+		.footer-menu {
+			ul {margin: 0;}
+			ul li + li {border-left: 1px solid #B2B3BA;padding-left: 15px;margin-left: 5px;}
+			ul li a {display: block;color: #B2B3BA;font-size: 14px;line-height: 1em;transition: all .4s ease;
+				&:hover {color: #EA6654;}
+			}
+		}
+	}
+}

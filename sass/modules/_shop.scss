@@ -1,0 +1,530 @@
+.single-shop-item {
+    margin-bottom: 50px;
+    &:hover {
+        .img-box .overlay {
+            opacity: 1;
+        }
+    }
+    .img-box {
+        position: relative;
+        img {
+            border-radius: 5px;
+            width: 100%;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(#000, .3);
+            border-radius: 5px;
+            border-bottom: 2px solid #EA6654;
+            transition: all .4s ease;
+            opacity: 0;
+            .box {
+                display: table;
+                width: 100%;
+                height: 100%;
+                .content {
+                    display: table-cell;
+                    vertical-align: middle;
+                    a.thm-btn {
+                        padding-left: 0px;
+                        padding-right: 0px;
+                        display: block;
+                        max-width: 155px;
+                        margin-left: auto;
+                        margin-right: auto;
+                        &.white {
+                            background: #fff;
+                            color: #848484;
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .text-box {
+        position: relative;
+        h3,
+        p {
+            margin: 0;
+        }
+        h3 {
+            font-family: 'Titillium Web';
+            font-size: 20px;
+            font-weight: normal;
+            color: #182345;
+            transition: all .4s ease;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            &:hover {
+                color: #EA6654;
+            }
+        }
+        p {
+            font-size: 18px;
+            color: #EA6654;
+            font-weight: 600;
+        }
+        a.fa-heart-o {
+            font-size: 14px;
+            color: #9FA2A6;
+            position: absolute;
+            top: 5px;
+            right: 0;
+        }
+        .star-box {
+            margin-top: 10px;
+            a+a {
+                margin-left: 5px;
+            }
+            a.fa {
+                color: #FFB400;
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+.shop-page {
+    &.single-shop-page {
+        padding-bottom: 70px;
+    }
+    .top-box {
+        margin-bottom: 50px;
+        .left-text {
+            p,
+            .select-box {
+                display: inline-block;
+                vertical-align: middle;
+            }
+            p {
+                margin: 0;
+            }
+            .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+                width: 180px;
+                height: 40px;
+                margin-bottom: 0px;
+                margin-left: 15px;
+                margin-right: 15px;
+            }
+            .bootstrap-select>.dropdown-toggle {
+                padding: 0;
+            }
+            .bootstrap-select>.btn {
+                padding: 0;
+                height: 100%;
+                padding: 0 20px;
+                color: #182345;
+                border: 1px solid #DDDEE4;
+                background-color: #fff !important;
+                font-size: 15px;
+                outline: none !important;
+                padding-right: 20px;
+                border-radius: 5px;
+            }
+            .bootstrap-select.btn-group .dropdown-toggle .caret {
+                position: static;
+                width: auto;
+                height: auto;
+                vertical-align: top;
+                border: none;
+                margin-left: -20px;
+            }
+            .bootstrap-select.btn-group .dropdown-toggle .caret:before {
+                color: #C6C6C6;
+                content: "\f107";
+                font-family: FontAwesome;
+                font-size: 16px;
+                color: #182345;
+            }
+            .bootstrap-select.btn-group .dropdown-menu.inner {
+                width: 200px;
+            }
+            .bootstrap-select .dropdown-menu {
+                padding: 0;
+                margin: 0;
+                border: 1px solid #ececec;
+                border-radius: 0;
+            }
+            .bootstrap-select .dropdown-menu>li {
+                padding: 0;
+            }
+            .bootstrap-select .dropdown-menu>li>a {
+                padding: 8px 15px;
+                font-size: 15px;
+                font-weight: normal;
+            }
+            .bootstrap-select .dropdown-menu>li>a span {
+                color: #9FA2A6;
+            }
+            .bootstrap-select .dropdown-menu>li>a:hover {
+                background: #EA6654;
+            }
+            .bootstrap-select .dropdown-menu>li>a:hover span {
+                color: #fff;
+            }
+        }
+        .right-text {
+            a {
+                display: inline-block;
+                background: #F5F5F5;
+                color: #222222;
+                font-size: 16px;
+                border-radius: 5px;
+                border: 1px solid #DDDEE4;
+                text-align: center;
+                line-height: 40px;
+                width: 40px;
+                height: 40px;
+                &.active {
+                    background: #EA6654;
+                    color: #fff;
+                    border-color: #EA6654;
+                }
+                +a {
+                    margin-left: 15px;
+                }
+            }
+        }
+    }
+    .recent-products {
+        .title {
+            margin-bottom: 30px;
+            h3 {
+                color: #182345;
+                font-size: 34px;
+                line-height: 1em;
+                margin: 0;
+                font-family: 'Titillium Web';
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+.single-shop-page {
+    .single-shop-page-content {
+        margin-bottom: 0;
+        .content-box {
+            h3 {
+                font-size: 34px;
+                margin: 0;
+            }
+            .star-box {
+                display: inline-block;
+                vertical-align: middle;
+                margin-top: 0;
+            }
+            span {
+                color: #182345;
+                font-size: 14px;
+                display: inline-block;
+                vertical-align: middle;
+                margin-left: 15px;
+            }
+            p {
+                color: #9FA2A6;
+                font-size: 15px;
+                font-weight: 400;
+                font-family: 'Open Sans';
+            }
+            p.price {
+                margin: 0;
+                margin-top: 10px;
+                span {
+                    font-size: 24px;
+                    font-weight: 600;
+                    margin-left: 0;
+                    vertical-align: middle;
+                }
+                del {
+                    font-size: 20px;
+                    font-weight: 600;
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+                span {
+                    color: #EA6654;
+                }
+            }
+        }
+        hr {
+            margin-bottom: 15px;
+        }
+        p.highlighted {
+            font-size: 16px;
+            font-family: 'Titillium Web';
+            color: #182345;
+            margin-top: 7px;
+            margin-bottom: 7px;
+        }
+        .pincheck {
+            margin-top: 10px;
+        }
+        .pincheck input[type="text"] {
+            width: 150px;
+            height: 40px;
+            border: 1px solid #f7f7f7;
+            padding-left: 10px;
+            line-height: 38px;
+            border-radius: 4px;
+            vertical-align: middle;
+            margin-right: 11px;
+            outline: none;
+        }
+        .pincheck button {
+            background: #F7F7F7;
+            height: 40px;
+            color: #182345;
+            font-size: 14px;
+            text-transform: uppercase;
+            font-family: 'Titillium Web';
+            padding-left: 20px;
+            padding-right: 20px;
+            border: none;
+            outline: none;
+            vertical-align: middle;
+        }
+        form.pincheck p {
+            display: inline-block;
+            color: #EA6654;
+            font-weight: 600;
+            margin-left: 5px;
+            font-size: 14px;
+        }
+        .qty {
+            width: 80px;
+            background: #EDEDED;
+            margin-top: 20px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .qty .quantity-spinner {
+            background: black;
+        }
+        .quantity-spinner {
+            padding: 5px 0px 5px 20px;
+            line-height: 24px;
+            height: 43px;
+            display: block;
+            width: 100%;
+            font-size: 20px;
+            font-family: 'Titillium Web';
+            position: relative;
+        }
+        .bootstrap-touchspin .input-group-btn-vertical .bootstrap-touchspin-up,
+        .bootstrap-touchspin .input-group-btn-vertical .bootstrap-touchspin-down {
+            background: #EDEDED;
+            border-color: #EDEDED;
+        }
+        .qty .quantity-spinner {
+            background: #EDEDED;
+            border: 1px solid #EDEDED;
+            border-right: 0;
+        }
+        .thm-btn {
+            display: inline-block;
+            vertical-align: middle;
+            margin-top: 0;
+            margin-left: 30px;
+            background: #EA6654;
+            color: #fff;
+            border-color: #EA6654;
+            margin-top: 20px;
+        }
+        ul.checklist {
+            &,
+            li {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+            }
+            & {
+                margin-top: 15px;
+            }
+            li+li {
+                margin-top: 5px;
+            }
+            li {
+                font-size: 15px;
+                color: #9FA2A6;
+                span {
+                    color: #182345;
+                    margin-right: 15px;
+                }
+                &.social {
+                    a {
+                        color: #9FA2A6;
+                        font-size: 14px;
+                        +a {
+                            margin-left: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .product-tab-box {
+        margin-top: 50px;
+        margin-bottom: 110px;
+        ul,
+        li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .tab-title {
+            margin-left: -2.5px;
+            margin-right: -2.5px;
+            li {
+                display: inline-block;
+                padding: 0 2.5px;
+                a {
+                    display: block;
+                    color: #182345;
+                    font-family: 'Titillium Web';
+                    font-size: 16px;
+                    border: 1px solid #f7f7f7;
+                    border-radius: 4px;
+                    line-height: 45px;
+                    background: #F7F7F7;
+                    padding-left: 33px;
+                    padding-right: 33px;
+                    border-bottom: 0;
+                    cursor: pointer;
+                }
+                &.active {
+                    a {
+                        background: #fff;
+                    }
+                }
+            }
+        }
+        .tab-content {
+            border: 1px solid #f7f7f7;
+            margin-top: -1px;
+            padding: 30px;
+            .review-box .single-review-box .text-box h3 {
+                font-family: 'Titillium Web';
+                color: #182345;
+            }
+            .list-box {
+                &,
+                li {
+                    margin: 0;
+                    padding: 0;
+                    list-style: none;
+                }
+                & {
+                    margin-bottom: 0px;
+                    margin-top: 0px;
+                }
+                li {
+                    position: relative;
+                    padding-left: 25px;
+                    font-size: 14px;
+                    +li {
+                        margin-top: 8px;
+                    }
+                    i {
+                        color: #182345;
+                        font-size: 14px;
+                        position: absolute;
+                        top: 50%;
+                        left: 0;
+                        transform: translateY(-50%);
+                    }
+                }
+            }
+            .review-box,
+            .leave-review-area {
+                margin-top: 40px;
+                .title {
+                    margin-bottom: 30px;
+                    h3 {
+                        color: #182345;
+                        font-size: 24px;
+                        line-height: 1em;
+                        margin: 0;
+                        font-family: 'Titillium Web';
+                        font-weight: 600;
+                    }
+                }
+            }
+            .review-box {
+                margin-top: 0;
+                .single-review {
+                    +.single-review {
+                        margin-top: 37px;
+                    }
+                    .img-box,
+                    .text-box {
+                        display: table-cell;
+                        vertical-align: top;
+                    }
+                    .img-box {
+                        width: 85px;
+                    }
+                    .text-box {
+                        padding-left: 25px;
+                        h3,
+                        p {
+                            margin: 0;
+                        }
+                        h3 {
+                            color: #182345;
+                            font-size: 20px;
+                            line-height: 1em;
+                            margin-bottom: 5px;
+                            font-family: 'Titillium Web';
+                            font-weight: 600;
+                        }
+                        span {
+                            font-size: 13px;
+                            line-height: 1em;
+                        }
+                        p {
+                            font-size: 15px;
+                            line-height: 26px;
+                            margin-top: 5px;
+                        }
+                    }
+                }
+            }
+            .leave-review-area {
+                form {
+                    input,
+                    textarea {
+                        display: block;
+                        width: 100%;
+                        height: 60px;
+                        padding-left: 20px;
+                        color: #182345;
+                        font-size: 15px;
+                        border: none;
+                        outline: none;
+                        border-radius: 5px;
+                        margin-bottom: 30px;
+                        background: #EDF0F3;
+                        @include placeholder {
+                            color: #182345;
+                        }
+                    }
+                    textarea {
+                        height: 200px;
+                        padding-top: 15px;
+                    }
+                    button.thm-btn {
+                        margin-top: 0px;
+                        padding-left: 39px;
+                        padding-right: 39px;
+                    }
+                }
+            }
+        }
+    }
+}

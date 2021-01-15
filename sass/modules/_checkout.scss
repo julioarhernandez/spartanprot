@@ -1,0 +1,119 @@
+.checkout-section.cart-section .billing-info-form {}
+
+.checkout-section.cart-section .billing-info-form form {}
+
+.checkout-section.cart-section .billing-info-form form .form-group .field-label {
+    color: yellow;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 0 3px;
+}
+
+.checkout-section.cart-section .billing-info-form form .form-group input {
+    border: 2px solid yellow;
+    color: yellow;
+    font-size: 16px;
+    height: 48px;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.checkout-section.cart-section .bottom {
+    padding-top: 40px;
+}
+
+.checkout-section .column.default-column h3 {
+    color: yellow;
+    font-size: 24px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 36px;
+}
+
+.checkout-section.cart-section .bottom .totals-table {
+    border: 2px solid yellow;
+}
+
+.checkout-section.cart-section .bottom .totals-table li {
+    border-bottom: 1px solid yellow;
+}
+
+.checkout-section.cart-section .bottom .totals-table li span.col.col-title {
+    border-right: 1px solid yellow;
+    color: yellow;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.checkout-section.cart-section .bottom .totals-table li span.col {
+    color: yellow;
+    font-size: 16px;
+}
+
+.checkout-section .payment-options {
+    padding-top: 30px;
+}
+
+.checkout-section .payment-options .option-block .radio-block.active {
+    .icon {
+        i {
+            color: yellow;
+        }
+    }
+}
+
+.checkout-section .payment-options .option-block {
+    margin-bottom: 10px;
+}
+
+.checkout-section .payment-options .option-block .radio-block .icon {
+    float: left;
+    padding-right: 15px;
+}
+
+.checkout-section .payment-options .option-block .radio-block .icon i {
+    color: yellow;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.checkout-section .payment-options .option-block .radio-block label.radio-label {
+    color: yellow;
+    font-size: 16px;
+    font-weight: normal;
+    display: block;
+}
+
+.checkout-section .payment-options .text {
+    padding-left: 30px;
+}
+
+.checkout-section .payment-options .text p {
+    color: yellow;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.checkout-section.cart-section .thm-btn {
+    margin-top: 40px;
+}
+
+.checkout-section.cart-section .cart-table {
+    width: 100%;
+    min-width: auto;
+}
+
+
+
+
+.checkout-section.cart-section .billing-info-form form .form-group .field-label {color: #999999;}
+.checkout-section.cart-section .billing-info-form form .form-group input {border-color: #f7f7f7;outline: none;color: #999;}
+.checkout-section.cart-section .bottom .totals-table,
+.checkout-section.cart-section .bottom .totals-table li,
+.checkout-section.cart-section .bottom .totals-table li span.col.col-title {border-color: #F7F7F7;}
+.checkout-section.cart-section .bottom .totals-table li span.col.col-title {color: #333333;}
+.checkout-section.cart-section .bottom .totals-table li span.col,
+.checkout-section .payment-options .text p {color: #999999;}
+.checkout-section .payment-options .option-block .radio-block label.radio-label {color: #333333;}
+.checkout-section .payment-options .option-block .radio-block.active .icon i,
+.checkout-section .payment-options .option-block .radio-block .icon i {color: #888;}

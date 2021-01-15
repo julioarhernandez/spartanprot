@@ -1,0 +1,21 @@
+.inner-banner {
+	position: relative;
+	background: #171b27 url(../img/inner-banner.jpg) center center no-repeat;
+	background-size: cover;
+	padding-top: 54px;
+	padding-bottom: 59px;
+	&:before {
+		content: '';
+		position: absolute;
+		top:0;left:0;
+		right: 0;
+		bottom: 0;
+		background:rgba(#171b27,.7);
+	}
+	.container {position: relative;}
+	h2 {margin: 0;color: #fff;font-size: 45px;font-weight: 600;font-family: 'Titillium Web';}
+	.breadcumb {margin-top: 10px;
+		a {color: #B2B3BA;font-size: 14px;font-weight: 400;}
+		span.sep {color: #B2B3BA;font-size: 14px;font-weight: 400;margin-left: 10px;margin-right: 10px;}
+	}
+}

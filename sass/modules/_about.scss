@@ -1,0 +1,15 @@
+.about-area {
+	.about-content {
+		margin-top: 40px;
+		padding-right: 70px;
+		.sec-title {margin-bottom: 40px;}
+		.list-items {
+			&, li {margin: 0;padding: 0;list-style: none;}
+			& {margin-bottom: 40px;margin-top: 25px;}
+			li {position: relative;padding-left: 25px;font-size: 14px;
+				+ li {margin-top: 8px;}
+				i {color: #182345;font-size: 14px;position: absolute;top:50%;left:0;transform: translateY(-50%);}
+			}
+		}
+	}
+}

@@ -1,0 +1,384 @@
+.cart-section {
+    position: relative;
+    ul {
+        margin: 0;
+        padding: 0;
+        li {
+            list-style: none;
+        }
+    }
+    .thm-btn {padding-top: 9px;padding-bottom: 9px;font-size: 15px;padding-left: 30px;padding-right: 30px;}
+}
+
+.cart-section .cart-outer {
+    position: relative;
+}
+
+.cart-section .table-outer {
+    position: relative;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.cart-section .sec-title {margin-bottom: 30px;
+    h2 {font-size: 34px;font-weight: bold;}
+}
+.cart-section .cart-table {
+    width: 100%;
+    min-width: 900px;
+    border: 1px solid #f7f7f7;
+}
+
+.cart-table .cart-header {
+    position: relative;
+    width: 100%;
+    text-transform: capitalize;
+    font-size: 16px;
+    
+    border-radius: 7px;
+    color: #343434;
+    background:#F7F7F7;
+}
+
+.cart-table thead tr th {
+    line-height: 24px;
+    padding: 20px 15px;
+    min-width: 120px;
+    font-weight: 700;
+}
+
+.cart-table thead tr th.prod-column {
+    text-align: left;
+    padding-left: 40px;
+}
+
+.cart-table tbody tr td {
+    line-height: 24px;
+    padding: 15px 10px;
+    min-width: 100px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #172245;
+}
+
+.cart-table tbody tr .qty {
+    width: 120px;
+    padding-right: 20px;
+}
+
+.cart-table tbody tr .qty .quantity-spinner {
+    background: black;
+}
+
+.cart-table tbody tr .prod-column .column-box {
+    position: relative;
+    min-height: 90px;
+    padding-left: 100px;
+    padding-top: 15px;
+    text-align: left;
+}
+
+.cart-table tbody tr .prod-column .column-box .prod-thumb {
+    position: absolute;
+    left: 0px;
+    top: 11px;
+    background: #172245;
+    padding: 0px;
+}
+
+.cart-table tbody tr .prod-column .column-box .prod-thumb img {
+    display: block;
+    max-width: 100%;
+}
+
+.cart-table tbody tr .prod-column .column-box h3 {
+    font-size: 18px;
+    color: #172245;
+    font-weight: 600;
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-family: 'Titillium Web';
+    text-transform: capitalize;
+    
+}
+
+.cart-table tbody tr .sub-total {
+    font-weight: 700;
+    color: #172245;
+}
+
+.cart-table tbody tr .remove-btn {
+    position: relative;
+    font-size: 16px;
+    color: #172245;
+    line-height: 30px;
+    -webkit-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.cart-table tbody tr .remove-btn .fa {
+    position: relative;
+    top: 2px;
+    padding-right: 10px;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.cart-table tbody tr .remove-btn:hover {
+    color: #172245;
+}
+
+.cart-table tbody tr {
+    border-bottom: 1px solid #F7F7F7;
+}
+
+.cart-table tbody tr td {
+    vertical-align: middle;
+}
+
+.cart-table tbody tr td .quantity-spinner {
+    padding: 5px 0px 5px 20px;
+    line-height: 24px;
+    height: 43px;
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    position: relative;
+}
+
+.cart-table tbody .available-info {
+    position: relative;
+    padding-left: 50px;
+    color: #999999;
+    font-size: 14px;
+}
+
+.cart-table tbody .available-info .icon {
+    position: absolute;
+    left: 0px;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    background: #172245;
+    border-radius: 50%;
+}
+
+.cart-table .bootstrap-touchspin .input-group-btn-vertical .bootstrap-touchspin-up,
+.cart-table .bootstrap-touchspin .input-group-btn-vertical .bootstrap-touchspin-down {
+    background: #EDEDED;
+    border-color: #EDEDED;
+}
+
+.cart-table .bootstrap-touchspin .input-group-btn-vertical i {
+    color: green;
+    left: 6px;
+}
+
+.cart-table tbody tr .qty .quantity-spinner {
+    background: #F7F7F7;
+    border: 1px solid #F7F7F7;
+    border-right: 0;
+}
+
+.cart-section .apply-coupon {
+    position: relative;
+}
+
+.cart-section .apply-coupon .form-group {
+    position: relative;
+    float: left;
+    margin-right: 20px;
+}
+
+.cart-section .apply-coupon .form-group input[type="text"] {
+    display: block;
+    line-height: 24px;
+    padding: 9px 15px;
+    border: 1px solid #172245;
+    border-radius: 3px;
+    width: 230px;
+    background: none;
+    font-weight: 500;
+    outline: none;
+    height: 44px;
+}
+
+.cart-section .estimate-form {
+    position: relative;
+}
+
+.cart-section h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #172245;
+    margin-bottom: 30px;
+}
+
+.cart-section .estimate-form .row {
+    margin-left: -7px;
+    margin-right: -7px;
+}
+
+.cart-section .estimate-form .row .form-group {
+    padding: 0px 7px !important;
+    margin-bottom: 31px;
+}
+
+.cart-section .totals-table {
+    position: relative;
+    border: 1px solid #f8f8f8;
+}
+
+.cart-section .totals-table .col {
+    position: relative;
+    display: block;
+    float: left;
+    padding: 10px 15px;
+    line-height: 24px;
+    width: 50%;
+}
+
+.cart-section .totals-table .col-title {
+    font-size: 14px;
+    color: #353535;
+    border-right: 1px solid #f8f8f8;
+    font-weight: 700;
+}
+
+.cart-section .totals-table li {
+    position: relative;
+    border-bottom: 1px solid #f8f8f8;
+}
+
+.cart-section .totals-table li:last-child {
+    border-bottom: none;
+}
+
+.cart-section .update-cart-box {
+    padding-top: 40px;
+}
+
+.cart-section .estimate-form {
+    .select-box {
+        .bootstrap-select.btn-group .dropdown-toggle .caret {
+            border: none;
+            top: 2px;
+            right: 20px;
+        }
+        .btn-group.bootstrap-select {
+            width: 100%;
+            outline: none;
+            .btn {
+                background: green;
+                font-size: 14px;
+                color: red;
+                text-transform: capitalize;
+                border: none;
+                outline: none !important;
+                padding: 15px 15px;
+                border-radius: 0;
+                border: 1px solid #172245;
+            }
+        }
+        .dropdown-menu {
+            padding: 0;
+            border-radius: 0;
+            >li>a {
+                padding: 8px 15px;
+                color: green;
+                transition: all .3s ease;
+                &:hover {
+                    background: #172245;
+                }
+            }
+        }
+        .bootstrap-select.btn-group {
+            .dropdown-menu li a {
+                &:hover span.text {
+                    color: green;
+                    transition: all .3s ease;
+                }
+                span.text {
+                    font-size: 13px;
+                    color: red;
+                }
+            }
+            .dropdown-toggle .caret:before {
+                content: '\f107';
+                font-family: 'FontAwesome';
+                color: red;
+                font-size: 14px;
+                line-height: 46px;
+            }
+        }
+    }
+}
+
+.cart-section .estimate-form h3 {
+    text-transform: uppercase;
+    font-size: 24px;
+    color: #172245;
+    margin: 0;
+    margin-bottom: 40px;
+    margin-top: 80px;
+}
+
+.cart-section .cart-total h3 {
+    text-transform: uppercase;
+    font-size: 24px;
+    color: #172245;
+    margin: 0;
+    margin-bottom: 40px;
+    margin-top: 80px;
+}
+
+.cart-section .cart-total .thm-btn {
+    margin-top: 30px;
+}
+
+.cart-section .estimate-form input {
+    width: 100%;
+    border: 2px solid #172245;
+    outline: none;
+    height: 52px;
+    padding-left: 15px;
+}
+
+
+.cart-section .qty {
+	.input-group {width: 74px;background:#ededed;}
+}
+.cart-section .thm-btn.update-cart {
+    border: 1px solid black;
+    color: #172245;
+    background-color: transparent;
+}
+
+
+.cart-table tbody tr td,
+.cart-table tbody tr .remove-btn {color: #999999;}
+.cart-section .thm-btn.update-cart {color: #161827;border: 1px solid #F7F7F7;}
+.cart-section .apply-coupon .form-group input[type="text"] {border: 2px solid #F7F7F7;}
+.cart-section .estimate-form input {border-color: #f7f7f7;}
+
+.cart-section .estimate-form .select-box .btn-group.bootstrap-select .btn {background:#fff;color: #CECECE;border-color: #f7f7f7;}
+.cart-section .estimate-form .select-box .bootstrap-select.btn-group .dropdown-toggle .caret:before {color: #cecece;}
+.cart-table tbody tr .prod-column .column-box .prod-thumb {padding: 0px;background:#f7f7f7;}
+.cart-table tbody tr .prod-column .column-box {margin-left: 15px;}
+.cart-section .thm-btn.update-cart:hover {background:#172245;color: #fff;border-color: #172245;}
+.cart-table tbody tr td {padding: 10px 10px 20px;}
+.cart-section .estimate-form .select-box .bootstrap-select.btn-group .dropdown-menu li a span.text {color: #999;}
+.cart-section .estimate-form .select-box .bootstrap-select.btn-group .dropdown-menu li a:hover span.text {color: #fff;}
+
+.cart-confirmation-box {
+    padding-top: 70px;
+    padding-bottom: 50px;
+}

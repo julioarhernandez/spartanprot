@@ -1,0 +1,114 @@
+.faq-video-area {
+	.accrodion-grp {
+		.accrodion {
+			.accrodion-title {
+				padding: 23px 0;
+				padding-left: 30px;
+				padding-right: 30px;
+                cursor: pointer;
+				h4 {margin: 0;font-family: 'Titillium Web';font-weight: 600;font-size: 22px;color: #182345;position: relative;
+					&:before {
+						content: '';
+						background: transparent url(../img/accordion-plus.png) center center no-repeat;
+						width: 13px;
+						height: 13px;
+						position: absolute;
+						top:50%;
+						right:0px;
+						transform: translateY(-50%);
+					}
+				}
+			}
+			.accrodion-content {
+				padding: 20px 0 23px;
+				padding-left: 30px;
+				padding-right: 30px;
+				p {margin: 0;font-size: 14px;line-height: 26px;}
+			}
+			&.active {
+				background:#fff;
+				border-radius: 5px;
+				box-shadow: 0px 5px 61px -15px rgba(0, 0, 0, 0.1);
+				.accrodion-title {
+					h4:before {
+						background: transparent url(../img/accordion-minus.png) center center no-repeat;
+					}
+				}
+				.accrodion-content {
+					border-top: 1px solid #DDE2E7;
+				}
+			}
+		}
+	}
+    .video-box {
+        position: relative;
+        &:hover {
+        	&:before {background: rgba(#171B27, .9);}
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            transition: all .4s ease;
+            background: rgba(#171B27, .35);
+            border-radius: 10px;
+        }
+        a.video-btn {
+            background: #EA6654;
+            width: 68px;
+            height: 68px;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 35px;
+            color: #fff;
+            text-align: center;
+            line-height: 74px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            &:before {
+				content: '';
+				border: 5px solid;
+				border-color: inherit;
+				width: 150%;
+				height: 150%;
+				-webkit-border-radius: 50px;
+				border-radius: 50px;
+				border-color: #EA6654;
+				position: absolute;
+				left: -25%;
+				top: -25%;
+				opacity: 1;
+				-webkit-animation: 1s videomodule-anim linear infinite;
+				animation: 1s videomodule-anim linear infinite;
+            }
+        }
+        @-webkit-keyframes videomodule-anim {
+            0% {
+                -webkit-transform: scale(0.68);
+                transform: scale(0.68);
+            }
+            100% {
+                -webkit-transform: scale(1.2);
+                transform: scale(1.2);
+                opacity: 0;
+            }
+        }
+
+        @keyframes videomodule-anim {
+            0% {
+                -webkit-transform: scale(0.68);
+                transform: scale(0.68);
+            }
+            100% {
+                -webkit-transform: scale(1.2);
+                transform: scale(1.2);
+                opacity: 0;
+            }
+        }
+    }
+}

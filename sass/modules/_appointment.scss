@@ -1,0 +1,65 @@
+.appointment-area {
+	background:#EDF0F3;
+	.appointment-img-box {
+		position: relative;
+		.appoint-text {
+			position: absolute;
+			top: 50%;
+			right: 0;
+			transform: translateY(-50%);
+			background:rgba(#161827,.7);
+			color: #EA6654;
+			font-size: 35px;
+			font-weight: 600;
+			line-height: 39px;
+			border-top-left-radius: 5px;
+			border-bottom-left-radius: 5px;
+			padding: 34px 57px;
+		}
+	}
+	.appointment-content {
+		padding-top: 120px;
+		padding-left: 70px;
+		.appointment-form {
+			input, textarea {display: block;width: 100%;height: 60px;padding-left: 20px;color: #182345;font-size: 15px;border: none;outline: none;border-radius: 5px;margin-bottom: 20px;
+				@include placeholder {color: #182345;}
+			}
+			button.thm-btn {margin-top: 40px;}
+			.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {width: 100%; height: 60px; margin-bottom: 20px;}
+			.bootstrap-select > .dropdown-toggle {padding: 0; }
+			.bootstrap-select > .btn {padding: 0; height: 100%; padding: 0 20px; color: #182345; border: 0px solid #ececec; background-color: #fff !important; font-size: 15px; outline: none !important; padding-right: 20px;border-radius: 5px;
+			}
+			.bootstrap-select.btn-group .dropdown-toggle .caret {position: static; width: auto; height: auto; vertical-align: top; border: none; margin-left: -20px; 
+			}
+			.bootstrap-select.btn-group .dropdown-toggle .caret:before {
+				color: #C6C6C6; content: "\f107"; font-family: FontAwesome;font-size: 16px;color: #182345;
+			}
+			.bootstrap-select.btn-group .dropdown-menu.inner {
+				width: 200px;
+			}
+			.bootstrap-select .dropdown-menu {
+				padding: 0;
+				margin: 0;
+				border: 1px solid #ececec;
+				border-radius: 0;
+			}
+			.bootstrap-select .dropdown-menu > li {
+				padding: 0;
+			}
+			.bootstrap-select .dropdown-menu > li > a {
+				padding: 8px 15px;
+				font-size: 15px;
+				font-weight: normal;
+			}
+			.bootstrap-select .dropdown-menu > li > a span {
+				color: #9FA2A6;
+			}
+			.bootstrap-select .dropdown-menu > li > a:hover {
+			background: #EA6654;
+			}
+			.bootstrap-select .dropdown-menu > li > a:hover span {
+				color: #fff;
+			}
+		}
+	}
+}

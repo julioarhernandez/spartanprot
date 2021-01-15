@@ -1,0 +1,20 @@
+.fun-fact-area {
+	position: relative;
+	background: #161827 url(../img/fun-fact-bg.jpg) center center no-repeat fixed;
+	background-size: cover;
+	padding: 100px 0;
+	&:before {
+		content: '';
+		position: absolute;
+		top:0;left:0;
+		right: 0;
+		bottom: 0;
+		background:rgba(#161827,.6);
+	}
+	.container {position: relative;}
+	.single-fun-fact {text-align: center;
+		i {font-size: 58px;color: #ea6654;}
+		h3 {margin: 0;color: #fff;font-family: 'Titillium Web';font-size: 55px;font-weight: normal;margin-top: 12px;}
+		p {margin: 0;color: #B2B3BA;font-size: 15px;margin-top: 10px;}
+	}
+}
