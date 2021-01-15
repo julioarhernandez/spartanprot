@@ -22,7 +22,7 @@
     }
 
     .navbar-default .navbar-toggle:hover {
-        border-color: #EA6654;
+        border-color: var(--main-green);
     }
 
     .navbar-default .navbar-toggle .icon-bar {
@@ -30,7 +30,7 @@
     }
 
     .navbar-default .navbar-toggle:hover .icon-bar {
-        background: #EA6654;
+        background: var(--main-green);
     }
 
     .navbar-collapse.collapse {
