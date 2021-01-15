@@ -16,11 +16,8 @@ gulp.task('partials', function () {
 
 gulp.task('copy', function () {
     return gulp.src([
-        './css',
-        './img',
-        './js',
-        './assets'
+        './assets/**/*'
     ]).pipe(gulp.dest('./build/'));
 });
 
-gulp.task('build', gulp.parallel(['clean', 'copy', 'partials']));
+gulp.task('build', gulp.series(['clean', 'copy', 'partials']));

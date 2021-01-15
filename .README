@@ -1,0 +1,9 @@
+You can see it online at: https://quizzical-bassi-b92eca.netlify.com
+
+## This project uses gulp
+
+Partials are in partial folder
+All files and assets are copied to build folder
+Do not change build files as they are generated dynamically
+
+Run `gulp build` to build the project
