@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+var browserSync = require('browser-sync').create();
 var injectPartials = require('gulp-inject-partials');
 var del = require('del');
 
@@ -20,4 +21,23 @@ gulp.task('copy', function () {
     ]).pipe(gulp.dest('./build/'));
 });
 
+gulp.task('reload', function (done) {
+    browserSync.reload();
+    done();
+});
+
+gulp.task('serve', function () {
+
+    browserSync.init({
+        server: "./build"
+    });
+
+    gulp.watch("assets/css/*.css", gulp.series(['copy', 'reload']));
+    gulp.watch("assets/img/**/*", gulp.series(['copy', 'reload']));
+    gulp.watch("assets/assets/**/*", gulp.series(['copy', 'reload']));
+    gulp.watch("assets/js/*.js", gulp.series(['copy', 'reload']));
+    gulp.watch("*.html").on('change', browserSync.reload);
+});
+
+gulp.task('default', gulp.series(['clean', 'copy', 'partials', 'serve']));
 gulp.task('build', gulp.series(['clean', 'copy', 'partials']));
