@@ -36,7 +36,7 @@ gulp.task('serve', function () {
     gulp.watch("assets/img/**/*", gulp.series(['copy', 'reload']));
     gulp.watch("assets/assets/**/*", gulp.series(['copy', 'reload']));
     gulp.watch("assets/js/*.js", gulp.series(['copy', 'reload']));
-    gulp.watch("*.html").on('change', browserSync.reload);
+    gulp.watch(["*.html", "partial/*.html"], gulp.series(['partials', 'reload']));
 });
 
 gulp.task('default', gulp.series(['clean', 'copy', 'partials', 'serve']));
