@@ -17,7 +17,8 @@
     "url": "https://github.com/julioarhernandez/spartanprot/issues"
   },
   "homepage": "https://github.com/julioarhernandez/spartanprot#readme",
-  "devDependencies": {
+  "dependencies": {
+    "del": "^6.0.0",
     "gulp-inject-partials": "^1.0.5",
     "browser-sync": "^2.26.13",
     "gulp": "^4.0.2",
