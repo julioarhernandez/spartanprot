@@ -16,14 +16,14 @@
     .navbar-default .navbar-toggle {
         display: block;
         margin-right: 0;
-        border-color: #161827;
+        border-color: transparent;
         background-color: transparent !important;
         margin: 12px 0;
     }
 
-    .navbar-default .navbar-toggle:hover {
-        border-color: var(--main-green);
-    }
+    /*.navbar-default .navbar-toggle:hover {*/
+    /*    border-color: var(--main-green);*/
+    /*}*/
 
     .navbar-default .navbar-toggle .icon-bar {
         background: #161827;
@@ -179,7 +179,7 @@
         -ms-transform: translateY(0);
         -o-transform: translateY(0);
         transform: translateY(0);
-        padding: 6px 0;
+        padding: 6px;
     }
 
     .header .header-navigation .container-fluid .right-button-box {
@@ -408,8 +408,8 @@
     }
 
     .header .header-navigation.navbar {
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .testimonial-area .single-testimonial p br {

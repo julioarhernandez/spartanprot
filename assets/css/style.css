@@ -711,6 +711,13 @@ a:active {
   font-size: 20px;
   margin-top: 25px;
 }
+
+@media (min-width: 1200px) {
+  .features-area .single-feature-box h3 {
+    font-size: 16px;
+  }
+}
+
 .features-area .single-feature-box a.read-more {
   background: var(--main-green);
   color: #fff;
