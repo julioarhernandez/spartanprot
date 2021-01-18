@@ -19,19 +19,19 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse " id="main-nav-bar">
                 <ul class="nav navbar-nav navigation-box main-navigation mainmenu">
-                    <li>
+                    <li @@if (current === 'home'){ class="current"}>
                         <a href="index.html">Home</a>
                     </li>
-                    <li>
+                    <li @@if (current === 'about'){ class="current"}>
                         <a href="about.html">About</a>
                     </li>
-                    <li>
-                        <a href="services.html">Service</a>
+                    <li @@if (current === 'services'){ class="current"}>
+                        <a href="services.html">Services</a>
                     </li>
-                    <li>
+                    <li @@if (current === 'testimonials'){ class="current"}>
                         <a href="testimonials.html">Testimonials</a>
                     </li>
-                    <li>
+                    <li @@if (current === 'contact'){ class="current"}>
                         <a href="contact.html">Contact</a>
                     </li>
                 </ul>

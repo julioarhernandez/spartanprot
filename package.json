@@ -18,10 +18,11 @@
   },
   "homepage": "https://github.com/julioarhernandez/spartanprot#readme",
   "dependencies": {
-    "del": "^6.0.0",
-    "gulp-inject-partials": "^1.0.5",
     "browser-sync": "^2.26.13",
+    "del": "^6.0.0",
     "gulp": "^4.0.2",
-    "gulp-cli": "^2.3.0"
+    "gulp-cli": "^2.3.0",
+    "gulp-file-include": "^2.3.0",
+    "gulp-inject-partials": "^1.0.5"
   }
 }

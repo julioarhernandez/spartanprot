@@ -13,11 +13,11 @@
 
 <div class="preloader"></div><!-- /.preloader -->
 
-<!-- partial:partial/_topbar.html -->
-<!-- partial -->
+@@include('partial/_topbar.html')
 
-<!-- partial:partial/_header.html -->
-<!-- partial -->
+@@include('partial/_header.html', {
+"current" : "testimonials"
+})
 
 <section class="inner-banner">
     <div class="container text-center">
@@ -161,7 +161,7 @@
 <!--Scroll to top-->
 <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-double-up"></span></div>
 
-
+@@include('partial/_footer.html')
 
 <!-- <script src="http://code.jquery.com/jquery-latest.min.js"></script> -->
 <script src="assets/jquery.js"></script>

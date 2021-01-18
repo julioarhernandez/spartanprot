@@ -1,6 +1,6 @@
 var gulp = require('gulp');
 var browserSync = require('browser-sync').create();
-var injectPartials = require('gulp-inject-partials');
+const fileinclude = require('gulp-file-include');
 var del = require('del');
 
 gulp.task('clean', function () {
@@ -9,8 +9,9 @@ gulp.task('clean', function () {
 
 gulp.task('partials', function () {
     return gulp.src('*.html')
-        .pipe(injectPartials({
-            removeTags: true
+        .pipe(fileinclude({
+            prefix: '@@',
+            basepath: '@file'
         }))
         .pipe(gulp.dest('./build'));
 });

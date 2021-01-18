@@ -16,11 +16,11 @@
     <div class="preloader"></div>
     <!-- /.preloader -->
 
-    <!-- partial:partial/_topbar.html -->
-    <!-- partial -->
+    @@include('partial/_topbar.html')
 
-    <!-- partial:partial/_header.html -->
-    <!-- partial -->
+    @@include('partial/_header.html', {
+    "current" : "about"
+    })
 
     <section class="inner-banner">
         <div class="container text-center">
@@ -260,8 +260,7 @@
     </section>
     <!-- /.brand-area -->
 
-    <!-- partial:partial/_footer.html -->
-    <!-- partial -->
+    @@include('partial/_footer.html')
 
     <!--Scroll to top-->
     <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-double-up"></span></div>
