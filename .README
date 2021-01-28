@@ -6,5 +6,6 @@ Partials are in partial folder
 All files and assets are copied to build folder
 Do not change build files as they are generated dynamically
 
+Run `npm install` To install dependencies
 Run `gulp` to work on development (live reload browsersync) or
 Run `gulp build` to build the project for production
