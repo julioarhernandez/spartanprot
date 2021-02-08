@@ -200,10 +200,6 @@
         max-width: none;
     }
 
-    .about-area {
-        padding-bottom: 120px;
-    }
-
     .footer .footer-widget.social-widget {
         padding-right: 20px;
     }
@@ -223,6 +219,10 @@
     .features-area .single-feature-box {
         margin-top: 0;
     }
+}
+
+.about-area {
+    padding-bottom: 120px;
 }
 
 @media (max-width: 991px) {
