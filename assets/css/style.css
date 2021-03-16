@@ -630,6 +630,19 @@ a:active {
   background-color: transparent;
   background-size: cover;
 }
+#minimal-bootstrap-carousel.slider-home-one .carousel-inner .item:before {
+  content: '';
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 1;
+}
+
 
 .slider-home-one {
   position: relative;
@@ -822,8 +835,9 @@ a:active {
   position: relative;
   cursor: pointer;
   overflow: hidden;
-  height: 192px;
+  height: 250px;
 }
+
 .single-service .img-box:before {
   content: "";
   position: absolute;
