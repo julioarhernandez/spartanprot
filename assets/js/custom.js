@@ -144,10 +144,6 @@ function thmOwlCarousel() {
                 600: {
                     items: 3,
                     autoWidth: false
-                },
-                1000: {
-                    items: 5,
-                    autoWidth: false
                 }
             }
         });

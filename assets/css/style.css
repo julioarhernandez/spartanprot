@@ -1177,6 +1177,13 @@ a:active {
   padding-top: 45px;
   padding-bottom: 30px;
 }
+.brand-carousel img {
+  width: 99px !important;
+  display: inline-block !important;
+}
+.brand-carousel .item {
+  text-align: center;
+}
 
 /************************** 
 * 11. fun fact styles 
