@@ -875,11 +875,19 @@ a:active {
 .single-service .text-box h3, .single-service .text-box p {
   margin: 0;
 }
+.single-service.collapsed .text-box p {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 .single-service .text-box h3 {
   font-family: "Titillium Web";
   color: #182345;
   font-size: 24px;
   font-weight: 600;
+  min-height: 50px;
 }
 .single-service .text-box p {
   font-size: 15px;

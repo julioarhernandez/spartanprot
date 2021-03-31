@@ -584,6 +584,19 @@ function handlePreloader() {
     }
 }
 
+function serviceReadMoreLess() {
+    $('.single-service a.read-more').on("click", function (e) {
+        e.preventDefault();
+        const parent = $(this).closest('.single-service');
+        $(parent).toggleClass("collapsed");
+        if ($(this).text() === "Read More") {
+            $(this).text("Read Less");
+        } else {
+            $(this).text("Read More");
+        }
+    });
+}
+
 function bootstrapAnimatedLayer() {
 
     /* Demo Scripts for Bootstrap Carousel and Animate.css article
@@ -647,6 +660,7 @@ jQuery(document).on('ready', function() {
         countDownTimer();
         SmoothMenuScroll();
         bootstrapAnimatedLayer();
+        serviceReadMoreLess();
     })(jQuery);
 });
 
