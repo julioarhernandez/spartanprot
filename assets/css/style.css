@@ -672,7 +672,7 @@ a:active {
 @media (max-width: 768px) {
   .slider-home-one .content h3 {
     font-size: 32px;
-    line-height: 1.5;
+    line-height: 1.1;
   }
 }
 .slider-home-one .content h3 span.font-bold {
